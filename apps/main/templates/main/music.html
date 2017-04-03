@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>James Kelley | Music</title>
+		<meta charset="utf-8">
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+		<link rel="icon" href="{% static 'main/images/GearRED.png' %}">
+	</head>
+	<div id="wrapper_mixes">
+		<body>
+			<div class="header">
+			<img src="{% static 'main/images/Push.png' %}" alt="header image">
+			</div>
+			<div class="nav_bar">
+				<div class="nav_links">
+					<ul>
+						<li><a href="/">. home</a></li>
+						<li><a href="/about">. about</a></li>
+						<li><a href="/music">. music</a></li>
+						<li><a href="/press">. press</a></li>
+						<li><a href="/upcoming_dates">. upcoming dates</a></li>
+						<li><a href="/contact_booking">. contact / booking</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_block_music">
+				<div><h1>. mixes</h1></div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307174975&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302295902&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/264138841&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/238559450&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/235989825&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195185240&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/183959779&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129744437&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73153834&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<iframe width="90%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/78324984&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				</div>
+				<div>
+					<h5>. more mixes and tracks on <a href="https://soundcloud.com/james-kelley">soundcloud</a> and <a href="https://www.beatport.com/artist/james-kelley/238391">beatport</a>
+					</h5>
+				</div>
+			</div>
+			<div class="side_block">
+				<div class="message_block">
+					{% if messages %}
+         			 <ul>
+         				{% for message in messages %}
+             				<li>{{ message }}</li>
+          				{% endfor %}
+          			</ul>
+       				{% endif %}
+				</div>
+				<div class="subscribe_block">
+					<h2>. mailing list</h2>
+					<h5>enter your email address to subscribe</h5>
+					<div>
+						<form action="/subscribe3" method="post">
+							{% csrf_token %}
+							<input type="text" name="email" placeholder="example@email.com">
+							<input class="button" type="submit" value=".subscribe">
+						</form>
+					</div>
+					<h5>. updates</h5>
+					<h5>. first to receive new mixes</h5>
+					<h5>. event details and locations</h5>
+					<h5>. promo tracks before release</h5>
+				</div>
+				<div class="nav_block">
+					<a href="https://www.residentadvisor.net/dj/jameskelley/dates">
+					<img class"nav" border="0" alt="resident advisor image" src="{% static 'main/images/HoverRA.gif' %}" width="51.44" height="23"></a>
+					<a href="https://soundcloud.com/james-kelley">
+					<img class"nav" border="0" alt="soundcloud image" src="{% static 'main/images/HoverSC.gif' %}" width="52" height="31"></a>
+					<a href="https://www.beatport.com/artist/james-kelley/238391">
+					<img class"nav" border="0" alt="beatport image" src="{% static 'main/images/HoverBP.gif' %}" width="75.5" height="28"></a>
+					<a href="https://www.facebook.com/JamesKelleyOfficialMusicPage/">
+					<img class"nav"  border="0" alt="fb artist site image" src="{% static 'main/images/HoverFB.gif' %}" width="30" height="30"></a>		
+				</div>
+			</div>
+			<div class="footer">
+				<h5>website design by dev2020</h5>
+			</div>
+		</body>
+	</div>
+</html>

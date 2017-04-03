@@ -1,0 +1,509 @@
+html {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	margin: 0px auto;
+}
+
+.header {
+	background-color: black;
+	height: 100px;
+	width: 1000px;
+}
+
+.nav_bar {
+	height: 40px;
+	width: 1000px;
+	background-color: #030303;
+}
+
+.nav_links {
+	padding-top: 12px;
+}
+
+a:hover { 
+    color: #700101;
+}
+
+ul {
+	margin-top: 0px;
+	font-weight: lighter;
+}
+
+li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	padding-left: 70px;
+	font-weight: lighter;
+}
+
+#wrapper {
+	margin: 0px auto;
+	background-image: url('/static/main/images/jk_bkgrnd.png');
+	width: 1000px;
+	height: 1075px;
+}
+
+#wrapper_about {
+	margin: 0px auto;
+	background-image: url('/static/main/images/jk_bkgrnd.png');
+	width: 1000px;
+	height: 1165px;
+
+}
+
+#wrapper_mixes {
+	margin: 0px auto;
+	background-image: url('/static/main/images/jk_bkgrnd.png');
+	width: 1000px;
+	height: 1375px;
+
+}
+
+#wrapper_press {
+	margin: 0px auto;
+	background-image: url('/static/main/images/jk_bkgrnd.png');
+	width: 1000px;
+	height: 3250px;
+
+}
+
+.main_block {
+	opacity: 0.85;
+    height: 850px;
+    width: 600px;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin-left: 27px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #1C1C1C;
+}
+
+.main_block_music {
+	opacity: 0.85;
+    height: 1150px;
+    width: 600px;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin-left: 27px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #1C1C1C;
+}
+
+
+.main_block_upcoming {
+	opacity: 0.85;
+    height: 525px;
+    width: 600px;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin-left: 27px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #1C1C1C;
+}
+
+.main_block_contact {
+	opacity: 0.85;
+    height: 525px;
+    width: 600px;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin-left: 27px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #1C1C1C;
+}
+
+.main_block_press {
+	opacity: 0.85;
+    height: 3065px;
+    width: 600px;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin-left: 27px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #1C1C1C;
+}
+
+.main_block_about h1 {
+	margin-left: 30px;
+	font-weight: lighter;	
+}
+
+.main_block_music h1 {
+	margin-left: 30px;
+	font-weight: lighter;	
+}
+
+.main_block_about {
+	opacity: 0.85;
+    height: 950px;
+    width: 600px;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    margin-left: 27px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: #1C1C1C;
+}
+
+.side_block {
+	opacity: 0.85;
+	display: inline-block;
+	background-color: #1C1C1C;
+	height: 525px;
+	width: 300px;
+	margin-left: 30px;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	border-radius: 20px;
+	border-style: dotted;
+  	border-color: black;
+}
+
+.message_block {
+	margin-left: 20px;
+	margin-top: 20px;
+	position: absolute;
+	background-color: #1C1C1C;
+	height: 30px;
+	width: 250px;
+	color: #700101;
+}
+
+.message_block ul {
+	padding-left: 19px;
+}
+
+.subscribe_block {
+	display: inline-block;
+	background-color: black;
+	color: white;
+	height: 320px;
+	width: 270px;
+	border-radius: 7px;
+	margin-left: 15px;
+	margin-top: 50px;	
+}
+
+.nav_block {
+	display: inline-block;
+	background-color: black;
+	height: 55px;
+	width: 270px;
+	border-radius: 7px;
+	margin-left: 15px;
+	margin-top: 50px;	
+}
+
+.contact_booking {
+	margin-top: 30px;
+	margin-left: 30px;
+	background-color: #1A1A1A;
+	border: 6px solid #700101;
+	height: 250px;
+	width: 350px;
+	border-radius: 5px;
+	display: inline-block;
+
+}
+
+.main_block_contact h1 {
+	margin-left: 30px;
+	font-weight: lighter;
+}
+
+.contact_booking h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #700101;
+	font-weight: lighter;
+}
+
+.contact_booking h3 {
+	margin-left: 25px;
+	color: #700101;
+	font-weight: lighter;
+}
+
+.contact_booking h4 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 0px;
+}
+.gear_img {
+	margin-top: 0px;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-left: 50px;
+}
+.profile {
+	margin-left: 50px;
+	height: 80%;
+	width: 80%;
+}
+
+.message {
+	font-weight: lighter;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+h4 {
+	margin-left: 24px;
+	margin-bottom: 0px;
+	font-weight: lighter;
+}
+
+h2 {
+	color: white;
+	display: inline-block;
+	margin-left: 23px;
+	margin-bottom: 7px;
+	font-weight: lighter;
+}
+
+h5 {
+	font-weight: lighter;
+	margin-left: 25px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin-left: 45px;
+	font-weight: lighter;
+}
+
+input {
+	display: block;
+	margin-left: 25px;
+}
+
+.button {
+	margin-top: 15px;
+	background-color: white;
+	border-style: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.nav {
+	display: inline-block;
+	padding: 0px;
+	margin-left: 9px;
+	margin-top: 18px;
+}
+
+.nav_block a {
+	padding-left: 9px;
+	padding-top: 12px;
+	display: inline-block;
+}
+
+.bio p {
+	font-weight: lighter;
+	font-size: 13px;
+	width: 525px;
+	margin-left: 38px;
+	text-align: justify;
+	font-family: sans-serif;
+
+}
+
+.main_block_music iframe {
+	margin-left: 30px;
+}
+
+.footer {
+	height: 49px;
+	width: 100%;
+	background-color: #030303;
+}
+
+.footer h5 {
+	padding-top: 20px;
+	padding-left: 30px;
+	color: #700101;
+}
+.footer_upcoming {
+	margin-top: 324px;
+	height: 49px;
+	width: 100%;
+	background-color: #030303;
+
+}
+
+.footer_upcoming h5 {
+	padding-top: 20px;
+	padding-left: 30px;
+	color: #700101;
+}
+
+.footer_contact {
+	margin-top: 325px;
+	height: 49px;
+	width: 100%;
+	background-color: #030303;
+
+}
+
+.footer_contact h5 {
+	padding-top: 20px;
+	padding-left: 30px;
+	color: #700101;
+}
+
+.footer_press {
+	height: 49px;
+	width: 100%;
+	background-color: #030303;
+
+}
+
+.footer_press h5 {
+	padding-top: 20px;
+	padding-left: 30px;
+	color: #700101;
+}
+
+.main_block_music a {
+	padding: 0px;
+	color: #700101;
+
+}
+
+.main_block_music a:hover {
+	color: white;
+}
+
+.main_block_upcoming a {
+	margin-left: 20px;
+	padding: 0px;
+	color: #700101;
+
+}
+
+.main_block_upcoming a:hover {
+	color: white;
+}
+
+.main_block_press img {
+	border: 6px solid #700101;
+	margin-top: 30px;
+	margin-left: 150px;
+	display: block;
+}
+
+.main_block_press h3 {
+	margin-left: 220px;
+	font-weight: lighter;
+}
+
+.thumbnail:hover {
+    position: relative;
+   	top: 0px;
+    left: -100px;
+    width: 500px;
+    height: auto;
+    z-index: 0;
+}
+
+.observer h3 {
+	margin-left: 0px;
+	padding-left: 115px;
+	margin-top: 20px;
+	font-weight: lighter;
+}
+
+.blogs_interviews {
+	width: 500px;
+	text-align: justify;
+	font-family: sans-serif;
+	margin-left: 50px;
+	font-weight: lighter;
+	font-size: 13px;
+}
+
+
+.main_block_press .observer_logo {
+	margin-top: 50px;
+	margin-bottom: 0px;
+	margin-left: 95px;
+}
+
+.main_block_press .droid_logo {
+	margin-top: 50px;
+	margin-bottom: 0px;
+	margin-left: 90px;
+}
+
+.croatia1 h3 {
+	margin-left: 95px;
+	font-weight: lighter;
+}
+
+.croatia2 h3 {
+	margin-left: 85px;
+	font-weight: lighter;
+}
+
+.droid h3 {
+	margin-left: 75px;
+	font-weight: lighter;
+}
+
+.main_block_press .croatia_logo {
+	margin-left: 95px;
+
+}
+
+.main_block_press .pitch_control_logo {
+	margin-left: 145px;
+
+}
+
+.bc h3{
+	margin-left: 105px;
+}
+
+.vid {
+	margin-top: 5px;
+	margin-left: 25px;
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>James Kelley | About</title>
+		<meta charset="utf-8">
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+		<link rel="icon" href="{% static 'main/images/GearRED.png' %}">
+	</head>
+	<div id="wrapper_about">
+		<body>
+			<div class="header">
+			<img src="{% static 'main/images/Push.png' %}" alt="header image">
+			</div>
+			<div class="nav_bar">
+				<div class="nav_links">
+					<ul>
+						<li><a href="/">. home</a></li>
+						<li><a href="/about">. about</a></li>
+						<li><a href="/music">. music</a></li>
+						<li><a href="/press">. press</a></li>
+						<li><a href="/upcoming_dates">. upcoming dates</a></li>
+						<li><a href="/contact_booking">. contact / booking</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_block_about">
+				<div><h1>. about james kelley</h1></div>
+				<div>
+					<img class="profile" src="{% static 'main/images/profile2.jpg' %}" alt="about image">
+				</div>
+					<div class="bio">
+					<p>Hailing from somewhere deep in the shadows of the Dallas underground this veteran artist, with nearly two decades of existence in the scene, is no stranger to orchestrating dance floors into a late night mind f*&k. Influenced by dank dark warehouses and all night marathon sets, his weapons of choice have been known to focus primarily on minimal and techno. Beginning his exploration of electronic sound in the late 90's, he then spent the next 7 years hypnotized by his love for vinyl. During this time of experimenting with almost every source of music available to him, he always leaned toward the darker side of sound, finally finding his home with dark minimal and techno. In early to mid 2010, he decided that producing his own music was the only way to go deeper into his own thoughts and express himself as an artist. After finally making material available to the public, he was immediately signed with Kontrol Records Rome and Mischkonsum Records of Stuttgart, Germany. His debut release "The Spell EP" and follow up releases "The Seven Year Detour EP" and "Time Machine EP" quickly seated themselves amongst some of the genre's elite at #17, #7 and #49 respectively on “Beatport’s Top Minimal 100" in 2012. His efforts have landed him gigs all over North America and abroad. Multiple appearances in NYC, also Washington DC, Denver, Vancouver BC, Austin, Shreveport, Berlin Germany and most recently Zadar Croatia, just to name a few. In addition to a heavy gig schedule, he also contributes as one half of the techno duo Dim Lights. Pulling double duties as a promoter, he also curates and hosts his own events under the name SOURCE 20/20 in Dallas where he currently resides. This project has brought some of the most influential artists in techno to the Dallas underground community. Most recently hosting two Official Movement Pre-Parties in 2014 and 2016. He is constantly locked in the lab formulating a unique brew of sounds ranging from haunting and deep, dark and moody, to twisted and diabolic so prepare yourself to get lost in an audio journey into the depths of your own mind.</p>
+				</div>
+			</div>
+			<div class="side_block">
+				<div class="message_block">
+					{% if messages %}
+          			<ul>
+          				{% for message in messages %}
+             				<li>{{ message }}</li>
+          				{% endfor %}
+          			</ul>
+        			{% endif %}
+				</div>
+				<div class="subscribe_block">
+					<h2>. mailing list</h2>
+					<h5>enter your email address to subscribe</h5>
+					<div>
+						<form action="/subscribe2" method="post">
+							{% csrf_token %}
+							<input type="text" name="email" placeholder="example@email.com">
+							<input class="button" type="submit" value=".subscribe">
+						</form>
+					</div>
+					<h5>. updates</h5>
+					<h5>. first to receive new mixes</h5>
+					<h5>. event details and locations</h5>
+					<h5>. promo tracks before release</h5>
+				</div>
+				<div class="nav_block">
+					<a href="https://www.residentadvisor.net/dj/jameskelley/dates">
+					<img class"nav" border="0" alt="resident advisor image" src="{% static 'main/images/HoverRA.gif' %}" width="51.44" height="23"></a>
+					<a href="https://soundcloud.com/james-kelley">
+					<img class"nav" border="0" alt="soundcloud image" src="{% static 'main/images/HoverSC.gif' %}" width="52" height="31"></a>
+					<a href="https://www.beatport.com/artist/james-kelley/238391">
+					<img class"nav" border="0" alt="beatport image" src="{% static 'main/images/HoverBP.gif' %}" width="75.5" height="28"></a>
+					<a href="https://www.facebook.com/JamesKelleyOfficialMusicPage/">
+					<img class"nav"  border="0" alt="fb artist site image" src="{% static 'main/images/HoverFB.gif' %}" width="30" height="30"></a>		
+				</div>
+			</div>
+			<div class="footer">
+				<h5>website design by dev2020</h5>
+			</div>
+		</body>
+	</div>
+</html>

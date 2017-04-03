@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>James Kelley | Press</title>
+		<meta charset="utf-8">
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+		<link rel="icon" href="{% static 'main/images/GearRED.png' %}">
+	</head>
+	<div id="wrapper_press">
+		<body>
+			<div class="header">
+			<img src="{% static 'main/images/Push.png' %}" alt="header image">
+			</div>
+			<div class="nav_bar">
+				<div class="nav_links">
+					<ul>
+						<li><a href="/">. home</a></li>
+						<li><a href="/about">. about</a></li>
+						<li><a href="/music">. music</a></li>
+						<li><a href="/press">. press</a></li>
+						<li><a href="/upcoming_dates">. upcoming dates</a></li>
+						<li><a href="/contact_booking">. contact / booking</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_block_press">
+				<div>
+					<h3>. fresh magazine berlin</h3>
+				</div>
+				<div>
+					<img class="thumbnail" src="{% static 'main/images/fresh_mag3.jpg' %}" alt="fresh mag berlin" height="300" width="300">
+					<img class="thumbnail" src="{% static 'main/images/fresh_mag1.jpg' %}" alt="fresh mag berlin" height="300" width="300">
+					<img class="thumbnail" src="{% static 'main/images/fresh_mag2.jpg' %}" alt="fresh mag berlin" height="300" width="300">	
+				</div>
+				<div>
+					<img class="observer_logo" src="{% static 'main/images/observer.png' %}" alt="observer_logo">
+				</div>
+				<div class="observer"><h3><a href="http://www.dallasobserver.com/music/dallas-observer-mixtape-with-james-kelley-xhei-bas-mooy-and-more-7819676">. full dallas observer interview</a></h3>
+				</div>
+				<div class="blogs_interviews">
+					<p>"James Kelley is a true techno journeyman. Kelley is based in Dallas, but has taken advantage of the mobility and flexibility that comes from being a solo electronic artist to travel and play all over the country, as well as some gigs on the other side of the pond. As a DJ and as a producer he leans heavily on the prolific side. His take on techno exists comfortably in the darkest shadows of Berlin club music, a soundtrack of robots making robots in a robot factory."</p>
+				</div>
+				<div>
+					<img class="croatia_logo" src="{% static 'main/images/klubskascena.png' %}" alt="croatia_logo" height="67%" width="67%">
+				</div>
+
+				<div class="croatia1"><h3><a href="https://www.klubskascena.hr/aktualno/najave/koncept-03-s-teksaskim-mracnim-techno-masakrom-16112016">. full klubskascena.hr croatia article</a></h3>
+				</div>
+				<div class="blogs_interviews">
+					<p>"We turn to the dark driving techno in homage of veteran James Kelley from the dark underworld of Dallas."</p>
+				</div>
+				<div>
+					<img class="pitch_control_logo" src="{% static 'main/images/pitch_control.png' %}" alt="pitch_control_logo" height="50%" width="50%">
+				</div>
+					<div class="croatia2"><h3><a href="http://pitchcontrol.org/2016/11/12/james-kelley-interview/">. full pitchcontrol.org croatia interview</a></h3>
+				</div>
+				<div class="blogs_interviews">
+					<p>"On 19/11/2016, Zadar has the opportunity to listen to veteran techno DJ - James Kelley.
+
+					Influenced by dank dark warehouses and all night marathon sets, his sets have been known to focus primarily on minimal and techno. He also Curates and hosts his own events under the name SOURCE 20/20 in Dallas where he currently resides."</p>
+				</div>
+				<div>
+					<img class="droid_logo" src="{% static 'main/images/droid.jpg' %}" alt="droids_logo" height="70%" width="70%">
+				</div>
+				<div class="droid"><h3><a href="http://www.droidbehavior.com/blog/2016/05/d-node-286-james-kelley-live-at-beta-nightclub-denver/">. droidbehavior.com los angeles guest mix</a></h3>
+				</div>
+					<div class="blogs_interviews">
+					<p>"James Kelley is a DJ, producer, and promoter (Source 20/20) from Dallas, bringing world class talent to the city and taking his own heavy warehouse sound around the continent and abroad. From his DJ sets to his own productions, Kelley keeps things deep, dark, moody, and moving. This 108-minute live recording was taken from his recent appearance at the Beta Nightclub in Denver."</p>
+				</div>
+				<div>
+				<img class="bc_logo" src="{% static 'main/images/BC.jpg' %}" alt="bc_logo" height="50%" width="50%">
+				</div>
+				<div class="bc"><h3><a href="http://blankcode.com/blog/2017/01/24/blank-code-podcast-204-james-kelley">. blankcode.com detroit guest mix</a></h3>
+				</div>
+				<div class="blogs_interviews">
+					<p>"This week we’re stoked to have Dallas, Texas techno producer James Kelley back on the podcast! This mix was recorded Live in Zadar, Croatia on Saturday November 19th, 2016 for the Koncept event at the Old Puppet Theater. His music can be found on labels such as Momentum League, Eternal Drive Recordings, Silent Hell Records, Subspec, Moleskine Music and Kontrol Records to name a few. 
+
+					Pulling double duties as a promoter, he also curates and hosts his own events under the name SOURCE 20/20 in Dallas where he currently resides. This project has brought some of the most influential artists in techno to the Dallas underground. He is constantly locked in the lab formulating a unique brew of sounds ranging from haunting and deep, dark and moody, to twisted and diabolic so prepare yourself to get lost in an audio journey into the depths of your own mind."</p>
+				</div>
+			</div>
+			<div class="side_block">
+				<div class="message_block">
+					{% if messages %}
+         			 <ul>
+         				{% for message in messages %}
+             				<li>{{ message }}</li>
+          				{% endfor %}
+          			</ul>
+       				{% endif %}
+				</div>
+				<div class="subscribe_block">
+					<h2>. mailing list</h2>
+					<h5>enter your email address to subscribe</h5>
+					<div>
+						<form action="/subscribe4" method="post">
+							{% csrf_token %}
+							<input type="text" name="email" placeholder="example@email.com">
+							<input class="button" type="submit" value=".subscribe">
+						</form>
+					</div>
+					<h5>. updates</h5>
+					<h5>. first to receive new mixes</h5>
+					<h5>. event details and locations</h5>
+					<h5>. promo tracks before release</h5>
+				</div>
+				<div class="nav_block">
+					<a href="https://www.residentadvisor.net/dj/jameskelley/dates">
+					<img class"nav" border="0" alt="resident advisor image" src="{% static 'main/images/HoverRA.gif' %}" width="51.44" height="23"></a>
+					<a href="https://soundcloud.com/james-kelley">
+					<img class"nav" border="0" alt="soundcloud image" src="{% static 'main/images/HoverSC.gif' %}" width="52" height="31"></a>
+					<a href="https://www.beatport.com/artist/james-kelley/238391">
+					<img class"nav" border="0" alt="beatport image" src="{% static 'main/images/HoverBP.gif' %}" width="75.5" height="28"></a>
+					<a href="https://www.facebook.com/JamesKelleyOfficialMusicPage/">
+					<img class"nav"  border="0" alt="fb artist site image" src="{% static 'main/images/HoverFB.gif' %}" width="30" height="30"></a>		
+				</div>
+			</div>
+		</body>
+		<div class="footer_press">
+			<h5>website design by dev2020</h5>
+		</div>
+	</div>
+</html>
